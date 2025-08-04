@@ -6,13 +6,15 @@ local keymap = vim.keymap -- for conciseness
 ---------------------
 -- General Keymaps -------------------
 
-keymap.set("n", "<leader>ee", vim.cmd.Ex, {desc = "open file exploral"})
+keymap.set("n", "<leader>ee", vim.cmd.Ex, { desc = "open file exploral" })
 
 -- use jk to exit insert mode
 keymap.set("i", "jk", "<ESC>", { desc = "Exit insert mode with jk" })
 
 -- clear search highlights
 keymap.set("n", "<leader>nh", ":nohl<CR>", { desc = "Clear search highlights" })
+
+keymap.set("n", "<leader>w", vim.cmd.w, { desc = "write the current file" })
 
 -- delete single character without copying into register
 -- keymap.set("n", "x", '"_x')
